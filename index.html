@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Project</title>
+</head>
+
+<body>
+
+    <header class="nav">
+        <a href="#home"><img src="/assets/Images/EMS.svg" alt="E-Millenial Store"></a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+        </nav>
+        <div id="cart">
+            <img id="cartbskt" src="/assets/Images/cart.svg" alt="cart">
+            <h4 id="cart-count">0</h4>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="store-info">
+            <h1 id="hero-heading">THE E-<br>MILLENIAL <br>STORE</h1>
+            <img src="/assets/Images/heroImage.png" alt="heroImage">
+        </div>
+        <div class="herobtn">
+            <button type="button" id="shopbtn">SHOP NOW</button>
+        </div>
+
+        <div id="about">
+            <p>E-Millenial Store is an hypothetical online store for gadgets we believe every 'Millenial' or 'Gen-Z'
+                should have today.
+                We've got mobile phones, laptops, smartwatches and other gadgets. Explore all our gadgets and choose
+                the ones that suit you.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="shop" class="products-container">
+        <h1>OUR GADGETS</h1>
+        <div class="products">
+            <div>
+                <figure>
+                    <img src="/assets/Images/product1.png" alt="SAMSUNG TV">
+                    <figcaption>SAMSUNG TV</figcaption>
+                    <p class="product-price">GHC 1000.45</p>
+                    <button type="button" data-id="1">ADD TO CART</button>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="/assets/Images/product2.png" alt="PIXEL 4a">
+                    <figcaption>PIXEL 4a</figcaption>
+                    <p class="product-price">GHC 3000.00</p>
+                    <button type="button" data-id="2">ADD TO CART</button>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="/assets/Images/product3.png" alt="PS 5">
+                    <figcaption>PS 5</figcaption>
+                    <p class="product-price">GHC 700.00</p>
+                    <button type="button" data-id="3">ADD TO CART</button>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="/assets/Images/product4.png" alt="MACKBOOK AIR">
+                    <figcaption>MACKBOOK AIR</figcaption>
+                    <p class="product-price">GHC 7000.00</p>
+                    <button type="button" data-id="4">ADD TO CART</button>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="/assets/Images/product5.png" alt="APPLE WATCH">
+                    <figcaption>APPLE WATCH</figcaption>
+                    <p class="product-price">GHC 7000.00</p>
+                    <button type="button" data-id="5">ADD TO CART</button>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="/assets/Images/product6.png" alt="AIR PODS">
+                    <figcaption>AIR PODS</figcaption>
+                    <p class="product-price">GHC 7000.00</p>
+                    <button type="button" data-id="6">ADD TO CART</button>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <div id="basket" class="basket">
+        <div class="cart-content">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button type="button" id="close-cart" aria-label="Close cart">✕</button>
+            </div>
+
+
+            <div id="cart-table-wrapper">
+                <p id="empty-cart-msg">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total-row">
+                <span id="totalamt">Total Amount</span>
+                <span id="total">GHC 0.00</span>
+            </div>
+
+
+            <form id="cart_form" name="cart_form" class="cart-form" method="post" novalidate>
+                <input type="text" name="customername" id="customername" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <input type="tel" name="contact" id="contact" placeholder="Your Phone Number" required>
+            </form>
+
+            <div id="checkoutbtn" class="checkoutbtn">
+                <button type="button" id="continue-shopping">← Continue Shopping</button>
+                <button type="button" id="checkout">Checkout →</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <footer>
+        <img src="/assets/Images/EMS.svg" alt="E-Millenial Store">
+        <h1>Designed &amp; Crafted by Rexford Opare Amoako</h1>
+    </footer>
+
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+    <script src="/scripts/cart.js"></script>
+    <script src="/scripts/scripts.js"></script>
+
+</body>
+
+</html>
